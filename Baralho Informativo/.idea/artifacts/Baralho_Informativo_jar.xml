@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Baralho Informativo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Baralho_Informativo_jar</output-path>
+    <root id="archive" name="Baralho Informativo.jar">
+      <element id="module-output" name="Baralho Informativo" />
+      <element id="extracted-dir" path="$USER_HOME$/OneDrive/Área de Trabalho/gson-2.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

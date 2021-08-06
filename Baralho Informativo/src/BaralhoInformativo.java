@@ -65,11 +65,20 @@ public class BaralhoInformativo extends JFrame {
                 code_value.setText(card.getCode());
 
                 try {
-                    BufferedImage img = ImageIO.read(new URL(card.getImage()));
-                    ImagePrinter img2 = new ImagePrinter(new URL(card.getImage()));
+                    URL url = new URL(card.getImage());
+                    BufferedImage c = ImageIO.read(url);
+                    ImageIcon image = new ImageIcon(c);
 
+                    JFrame frame = new JFrame();
 
-                    img2.print()
+                    JLabel label = new JLabel(image);
+
+                    frame.add(label);
+                    frame.setDefaultCloseOperation
+                            (JFrame.HIDE_ON_CLOSE);
+                    frame.pack();
+                    frame.setVisible(true);
+
                 } catch (IOException ioException) {
                     ioException.printStackTrace();
                 }
